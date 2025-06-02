@@ -1,0 +1,74 @@
+{
+  "icon": "./assets/icon.svg",
+  "name": "Tornado Chart",
+  "hint": "",
+  "options": {
+    "aggregation": true,
+    "individualFilter": true,
+    "aggregateFilter": true
+  },
+  "settings": [
+    {
+      "name": "Format",
+      "settings": [
+        {
+          "name": "Values",
+          "key": "showValues",
+          "type": "boolean",
+          "defaultValue": true
+        }
+      ]
+    }
+  ],
+  "bindingsTrays": [
+    {
+      "key": "row",
+      "name": "GROUPING DIMENSION",
+      "queryRole": "row",
+      "minCount": 1,
+      "maxCount": 1,
+      "settings": [
+        {
+          "name": "Sort",
+          "settings": [
+            {
+              "name": "Sort",
+              "key": "sort",
+              "type": "sort"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "measure",
+      "name": "MEASURE",
+      "queryRole": "measure",
+      "minCount": 2,
+      "maxCount": 2,
+      "settings": [
+        {
+          "name": "Format",
+          "settings": [
+            {
+              "name": "Color",
+              "key": "color",
+              "type": "color"
+            },
+            {
+              "name": "Format",
+              "key": "format",
+              "type": "number-format",
+              "defaultValue": "###,###"
+            },
+            {
+              "name": "Filter",
+              "key": "filter",
+              "type": "filter"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iNCIgZmlsbD0iI0Y5RjlGOSIvPgo8cGF0aCBkPSJNMzUuMiAxOS42NkwyNi4zMiAyNC40OEMyNS41IDI0LjkyIDI1IDI1LjggMjUgMjYuNzhWMzYuMUMyNSAzNy4xIDI1Ljk4IDM3Ljc2IDI2LjggMzcuM0wzNS42OCAzMi40OEMzNi40OCAzMi4wNCAzNyAzMS4xNiAzNyAzMC4xOFYyMC44OEMzNyAxOS44NiAzNi4wMiAxOS4yMiAzNS4yIDE5LjY2Wk0yMS42OCAyNC40NkwxMi44IDE5LjY2QzExLjk4IDE5LjIyIDExIDE5Ljg2IDExIDIwLjg2VjMwLjIyQzExIDMxLjIgMTEuNSAzMi4wOCAxMi4zMiAzMi41MkwyMS4yIDM3LjMyQzIyLjAyIDM3Ljc2IDIzIDM3LjEgMjMgMzYuMVYyNi43NkMyMyAyNS43OCAyMi41IDI0LjkgMjEuNjggMjQuNDZaTTM0LjM4IDE3LjQ4QzM0LjggMTcuMjYgMzUgMTYuODggMzQuOTYgMTYuNTJDMzUgMTYuMTQgMzQuOCAxNS43OCAzNC4zOCAxNS41NkwyNS4zNCAxMC44NEMyNC45NCAxMC42MiAyNC40NiAxMC41MiAyMy45OCAxMC41MkMyMy41IDEwLjUyIDIzLjAyIDEwLjYyIDIyLjYyIDEwLjg0TDEzLjU4IDE1LjU0QzEzLjE2IDE1Ljc2IDEyLjk4IDE2LjE0IDEzIDE2LjVDMTIuOTggMTYuODggMTMuMTYgMTcuMjYgMTMuNTggMTcuNDhMMjIuNjIgMjIuMThDMjMuMDIgMjIuNCAyMy41IDIyLjUgMjMuOTggMjIuNUMyNC40NiAyMi41IDI0Ljk0IDIyLjQgMjUuMzQgMjIuMThMMzQuMzggMTcuNDhaIiBmaWxsPSIjOTlBNkIwIi8+Cjwvc3ZnPgo=",
+  "name": "Tornado Chart",
+  "hint": "",
+  "options": {
+    "aggregation": true,
+    "individualFilter": true,
+    "aggregateFilter": true
+  },
+  "settings": [
+    {
+      "name": "Format",
+      "settings": [
+        {
+          "name": "Values",
+          "key": "showValues",
+          "type": "boolean",
+          "defaultValue": true
+        }
+      ]
+    }
+  ],
+  "bindingsTrays": [
+    {
+      "key": "row",
+      "name": "GROUPING DIMENSION",
+      "queryRole": "row",
+      "minCount": 1,
+      "maxCount": 1,
+      "settings": [
+        {
+          "name": "Sort",
+          "settings": [
+            {
+              "name": "Sort",
+              "key": "sort",
+              "type": "sort"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "measure",
+      "name": "MEASURE",
+      "queryRole": "measure",
+      "minCount": 2,
+      "maxCount": 2,
+      "settings": [
+        {
+          "name": "Format",
+          "settings": [
+            {
+              "name": "Color",
+              "key": "color",
+              "type": "color"
+            },
+            {
+              "name": "Format",
+              "key": "format",
+              "type": "number-format",
+              "defaultValue": "###,###"
+            },
+            {
+              "name": "Filter",
+              "key": "filter",
+              "type": "filter"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
